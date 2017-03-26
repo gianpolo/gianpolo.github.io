@@ -1,7 +1,7 @@
 {
-  "name": "online-resume",
+  "name": "gianpolo.github.io",
   "version": "1.0.0",
-  "description": "Gianpiero Ferraro personal site",
+  "description": "Gianpiero Ferraro personal site gianpolo.github.io",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
