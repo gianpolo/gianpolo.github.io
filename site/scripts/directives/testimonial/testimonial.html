@@ -1,0 +1,45 @@
+<!-- LARGE VERSION and MEDIUM--->
+<div class="hide-on-small-only hide-on-med-only">
+    <div class="card">
+        <div class="card-content center">
+            <div class="vertical-center">
+                <i class="fa fa-quote-left quote-icon" ng-style="{color:quoteColor}"></i>
+                <p ng-transclude="content" ></p>
+            </div>
+        </div>
+        <div class="card-footer white-text row valign-wrapper" ng-style="{backgroundColor:quoteColor}">
+                <div class="col l2 m2 s2">
+                    <div class="avatar-wrapper avatar-absolute z-depth-1 {{avatarImage}} circle"></div>
+                </div>
+                <div class="col l4 m4 s4 center valign">
+                    <h3>{{avatarName}}</h3>
+                </div>
+                <div class="col l5 m5 s5 center valign">
+                    <div ng-transclude="footer"></div>
+                </div>
+                <div class="col s5 left-align valign">
+                    <i class="fa fa-linkedin-square"></i>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- SMALL  VERSION  -->
+<div class="hide-on-large-only hide-on-medium-only">
+    <div class="card">
+        <div class="card-content center">
+                <div class="avatar-wrapper avatar-relative z-depth-1 {{avatarImage}} circle " ></div>
+                <h3 style="margin-top:0; padding-top:0">{{avatarName}}</h3>
+                <p ng-transclude="content"></p>
+        </div>
+        <div class="card-footer white-text row valign-wrapper" ng-style="{backgroundColor:quoteColor}">
+            <div class="col s9 center valign">
+                <div ng-transclude="footer"></div>
+            </div>
+            <div class="col s3 left-align valign">
+                <i class="fa fa-linkedin-square"></i>
+            </div>
+        </div>
+    </div>
+</div>
+

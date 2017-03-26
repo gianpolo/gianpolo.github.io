@@ -1,0 +1,124 @@
+/* style for
+********** collapsible-item **********
+*/
+
+collapsible-item-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 17pt;
+}
+
+.collapsible-wrapper {
+    position:relative;
+}
+.more {
+    position:absolute;
+    right:1rem;
+    top:1rem;
+}
+
+.more .fa {
+    color: #5da4d9;
+    font-size:1em;
+}
+
+.disc-list {
+    list-style-type: disc !important;
+}
+
+.disc-list li {
+    list-style-type: disc !important;
+}
+
+.external-logo {
+    text-align: right;
+}
+
+.external-logo img {
+    display:inline;
+}
+
+nav a.button-collapse i {
+    font-size:21pt;
+}
+.sidebar .heading .title {
+    right: 67px;
+    bottom: 43px;
+    text-align: right;
+}
+.title h2 {
+    font-weight: 200;
+}
+
+.section-wrapper.box-no-padding {
+    padding:0 !important;
+}
+
+.blue {
+    background-color:  #5da4d9 !important;
+}
+.indicators {
+    height: 30px !important;
+}
+.indicator-item {
+    background-color: rgba(93, 164, 217, 0.50) !important;
+}
+.indicator-item.active {
+     background-color: #5da4d9 !important;
+ }
+
+.carousel {
+    height : 500px !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .carousel {
+        height : 600px !important;
+    }
+}
+
+
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+
+    bottom:130px !important;
+}
+
+.carousel .indicators {
+    position: absolute;
+    bottom: 120px;
+
+
+}
+.no-margin {
+    margin: 0px !important;
+}
+
+.vertical-center {
+    position: relative;
+    top:30%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.quote-icon{
+    padding:20px;
+}
+
+.mobile h4, .email h4 {
+    font-size:1rem !important;
+}
+
+.color1 {
+    background-color: #1abc9c !important;
+
+}
+
+.color2 {
+    background-color: #e67e22 !important;
+
+}
+.color3 {
+    background-color: #e74c3c !important;
+
+}

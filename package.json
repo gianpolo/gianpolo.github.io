@@ -1,0 +1,15 @@
+{
+  "name": "online-resume",
+  "version": "1.0.0",
+  "description": "Gianpiero Ferraro personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gianpiero Ferraro",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "grunt": "^1.0.1"
+  }
+}

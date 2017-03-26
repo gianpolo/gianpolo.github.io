@@ -1,0 +1,96 @@
+.card {
+    border:0px !important;
+    border-radius :0px !important;
+    margin:0 !important;
+    box-shadow:none;
+
+}
+
+.card-footer {
+    height:100px;
+}
+
+.card-content {
+    height: 400px !important;
+    line-height: 400px !important;
+}
+@media only screen and (max-width: 992px) {
+    .card-content {
+        height:500px !important;
+        line-height:500px !important;
+    }
+}
+.card-content p {
+    font-size:12pt;
+    font-weight: 300;
+    font-style:italic
+}
+
+.card-footer p {
+    font-size:10pt !important;
+    line-height: 7pt !important;
+}
+
+.card-footer h3 {
+    font-size: 18pt;
+    line-height: 37pt;
+    margin: 0px;
+    font-weight: 100;
+}
+
+.card-title {
+    position:absolute;
+    left: 147px !important;
+    bottom: 100px !important;
+}
+
+.card-profile {
+    height:50px;
+
+}
+.card-profile > div {
+    line-height: 100px;
+}
+.avatar-absolute {
+    position: absolute;
+    bottom: 50px;
+    left: 24px;
+}
+.avatar-relative {
+    margin: 0px auto 24px auto !important;
+}
+.avatar-wrapper {
+    height: 100px;
+    width: 100px;
+}
+
+.margherita {
+    background: url(../images/avatar/margherita.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landini {
+    background: url(../images/avatar/landini.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pasquale {
+    background: url(../images/avatar/pasquale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carlo {
+    background: url(../images/avatar/carlo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vella {
+    background: url(../images/avatar/vella.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

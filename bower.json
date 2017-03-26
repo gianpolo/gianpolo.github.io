@@ -1,0 +1,26 @@
+{
+  "name": "online-resume",
+  "description": "Gianpiero Ferraro personal site",
+  "main": "index.js",
+  "authors": [
+    "gferraro <gianpie@yahoo.it>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "wow": "wowjs#^1.1.2",
+    "angular-route": "^1.6.3",
+    "materialize": "^0.98.0"
+  },
+  "resolutions": {
+    "materialize": "^0.98.0"
+  }
+}
