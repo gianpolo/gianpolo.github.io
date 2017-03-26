@@ -11,5 +11,8 @@
   "devDependencies": {
     "bower": "^1.8.0",
     "grunt": "^1.0.1"
+  },
+  "dependencies": {
+    "grunt-contrib-sass": "^1.0.0"
   }
 }
