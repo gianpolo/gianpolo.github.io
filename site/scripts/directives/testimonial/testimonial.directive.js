@@ -6,7 +6,7 @@
         .directive('testimonial',function(QuoteColors){
             return {
                 restrict:'E',
-                templateUrl:'scripts/directives/testimonial/testimonial.html',
+                templateUrl:'site/scripts/directives/testimonial/testimonial.html',
                 scope:{
                     avatarImage:'@',
                     avatarName:'@',

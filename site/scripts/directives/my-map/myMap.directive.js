@@ -224,7 +224,7 @@
 
         return {
             restrict: 'E',
-            templateUrl: 'scripts/directives/my-map/my-map.html',
+            templateUrl: 'site/scripts/directives/my-map/my-map.html',
             replace: true,
             link: link
         };

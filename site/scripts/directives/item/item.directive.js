@@ -11,7 +11,7 @@
                     itemSubtitle:'?itemSubtitle',
                     itemContent:'?itemContent'
                 },
-                templateUrl:'scripts/directives/item/item.html',
+                templateUrl:'site/scripts/directives/item/item.html',
                 link:function($scope,elem,attr){
                     $scope.delay = attr.wowDelay || '0.1s';
                     $scope.animation = attr.animation || 'a2';

@@ -7,7 +7,7 @@
         .directive('carousel',function(){
             return {
               restrict: 'E',
-              templateUrl:'scripts/directives/carousel/carousel.html',
+              templateUrl:'site/scripts/directives/carousel/carousel.html',
                 transclude:true,
                 link:function($scope,elem){
                     $('.carousel.carousel-slider').carousel({fullWidth: true, height:'450px'});

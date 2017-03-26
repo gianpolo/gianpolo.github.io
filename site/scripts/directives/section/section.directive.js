@@ -11,7 +11,7 @@
                     sectionContent:'?sectionContent',
                     sectionTitle:'?sectionTitle'
                 },
-                templateUrl:'scripts/directives/section/section.html'
+                templateUrl:'site/scripts/directives/section/section.html'
             }
         })
 })();

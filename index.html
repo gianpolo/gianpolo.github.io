@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gianpiero Ferraro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700,700i" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" href="site/css/app.css">
+    <link rel="stylesheet" href="site/css/style.css">
+    <link rel="stylesheet" href="site/css/responsive.css">
+    <link rel="stylesheet" href="site/css/map.css">
+    <link rel="stylesheet" href="site/css/myStyle.css">
+    <link rel="stylesheet" href="site/css/card.css">
+
+
+
+</head>
+<body ng-app="app">
+    <ng-include src="'site/views/navbar.html'"></ng-include>
+    <div class="container">
+
+    <div class="row">
+        <ng-include src="'site/views/sidebar.html'"></ng-include>
+
+
+        <div class="col s12 m12 l8 section">
+         <ng-view></ng-view>
+        </div>
+
+    </div>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large color3 tooltiped" data-tooltip="Download" data-position="left">
+                <i class="fa fa-download" aria-hidden="true"></i>
+            </a>
+            <ul>
+                <li><a class="btn-floating color1 tooltipped" href="site/assets/CV_Gianpiero_Ferraro.pdf" target="_blank" data-tooltip="pdf" data-position="left"><i class="fa fa-file-pdf-o" aria-hidden="true" ></i></a></li>
+                <li><a class="btn-floating color2 tooltipped" href="site/assets/CV_Gianpiero_Ferraro.zip" data-tooltip="zip" data-position="left"><i class="fa fa-file-archive-o" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+</div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/materialize/dist/js/materialize.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/wow/dist/wow.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCssb4Wh1X9wz7g_buwGRqqSYz8RaY2snk"></script>
+    <script src="site/scripts/app.js"></script>
+    <script src="site/scripts/directives/box/box.directive.js"></script>
+    <script src="site/scripts/directives/section/section.directive.js"></script>
+    <script src="site/scripts/directives/item/item.directive.js"></script>
+    <script src="site/scripts/directives/collapsible-item/collapsibleItem.directive.js"></script>
+    <script src="site/scripts/directives/testimonial/testimonial.directive.js"></script>
+    <script src="site/scripts/directives/carousel/carousel.directive.js"></script>
+    <script src="site/scripts/services/QuoteColors.service.js"></script>
+    <script src="site/scripts/directives/side-nav/sideNav.directive.js"></script>
+    <script src="site/scripts/directives/tooltip/tooltip.directive.js"></script>
+    <script src="site/scripts/controllers/nav.controller.js"></script>
+    <script src="site/scripts/directives/my-map/myMap.directive.js"></script>
+
+</body>
+</html>

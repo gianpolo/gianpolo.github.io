@@ -6,9 +6,9 @@
     var app = angular.module("app", ['ngRoute']);
     app.config(function ($routeProvider) {
         $routeProvider
-            .when("/home", {templateUrl: 'views/resume/resume.html'})
-            .when("/hire-me", {templateUrl: 'views/hire-me/hire-me.html'})
-            .when("/about", {templateUrl: 'views/about/about.html'})
+            .when("/home", {templateUrl: 'site/views/resume/resume.html'})
+            .when("/hire-me", {templateUrl: 'site/views/hire-me/hire-me.html'})
+            .when("/about", {templateUrl: 'site/views/about/about.html'})
             .otherwise({redirectTo: "/home"});
     });
 

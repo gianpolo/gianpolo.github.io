@@ -6,7 +6,7 @@
         .directive('box',function(){
             return {
                 restrict:'EA',
-                templateUrl: 'scripts/directives/box/box.html',
+                templateUrl: 'site/scripts/directives/box/box.html',
                 transclude:true,
 
                 link:function($scope,elem,attr){

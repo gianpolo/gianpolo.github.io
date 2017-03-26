@@ -1,0 +1,16 @@
+@import "../../bower_components/materialize/sass/components/color";
+
+@import "variables";
+@import "../../bower_components/materialize/sass/materialize";
+
+nav .brand-logo span {
+  font-size: 1rem;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+nav .brand-logo {
+  left:2rem;
+}

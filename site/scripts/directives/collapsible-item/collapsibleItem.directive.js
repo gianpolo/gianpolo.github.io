@@ -13,7 +13,7 @@
                     collapsibleItemContent:'?collapsibleItemContent'
                 },
                 scope:{},
-                templateUrl:'scripts/directives/collapsible-item/collapsible-item.html',
+                templateUrl:'site/scripts/directives/collapsible-item/collapsible-item.html',
                 link:function($scope,elem,attr){
                     $scope.delay = attr.wowDelay || '0.1s';
                     $scope.animation = attr.animation || 'a2';
