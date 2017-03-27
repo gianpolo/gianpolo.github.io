@@ -4,9 +4,15 @@
 
 module.exports = function(grunt){
 
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-contrib-sass");
+    grunt.loadNpmTasks("grunt-contrib-connect");
 
     grunt.initConfig({
-        site : 'site',
+        site: 'site',
+        watch : {
+             files:['site/**/*.*']
+        },
         sass: {                              // Task
             dist: {                            // Target
                 options: {                       // Target options
@@ -16,9 +22,19 @@ module.exports = function(grunt){
                     '<%= site %>/css/app.css': '<%= site %>/sass/app.scss'     // 'destination': 'source'
                 }
             }
+        },
+        connect: {
+            server: {
+                options: {
+                    livereload: true,
+                    port: 8000,
+                    hostname: 'localhost'
+                }
+            }
         }
     });
     grunt.registerTask("sass",["sass"]);
 
-    grunt.loadNpmTasks("grunt-contrib-sass");
+
+    grunt.registerTask("start",["connect:server","watch"]);
 };
