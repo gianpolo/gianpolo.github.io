@@ -7919,8 +7919,8 @@ Picker.extend( 'pickadate', DatePicker )
 
           if (dragged) {
             // If dragging don't allow vertical scroll.
-            //e.preventDefault();
-            //e.stopPropagation();
+            e.preventDefault();
+            e.stopPropagation();
             return false;
           }
         }
