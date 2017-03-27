@@ -122,3 +122,11 @@ nav a.button-collapse i {
     background-color: #e74c3c !important;
 
 }
+
+.page-title {
+    display: inline-block;
+    font-size: 22pt;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2rem;
+    font-weight: 300;
+}

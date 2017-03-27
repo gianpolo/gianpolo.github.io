@@ -13,7 +13,7 @@
             .otherwise({redirectTo: "/resume"});
     });
 
-    app.run(['$rootScope', function ($rootScope) {
+    app.run(['$rootScope','$location', function ($rootScope, $location) {
 
         //create a new instance
         new WOW().init();
@@ -23,6 +23,26 @@
             //when the view changes sync wow
 
             new WOW().sync();
+
+        });
+
+        $rootScope.$on('$routeChangeSuccess', function(e, current, pre) {
+
+            switch ($location.path()){
+
+                case '/about':
+                    $rootScope.currentPage= 'About';
+                    break;
+                case '/hire-me':
+                    $rootScope.currentPage = 'Contact';
+                    break;
+                case '/blog':
+                    $rootScope.currentPage = 'Blog';
+                    break;
+                default:
+                    $rootScope.currentPage = 'Resume';
+                    break;
+            }
 
         });
     }]);

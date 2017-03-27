@@ -10,7 +10,7 @@
               templateUrl:'site/scripts/directives/carousel/carousel.html',
                 transclude:true,
                 link:function($scope,elem){
-                    $('.carousel.carousel-slider').carousel({fullWidth: true, height:'450px'});
+                    $('.carousel.carousel-slider').carousel({fullWidth: true, height:'10px'});
                     $scope.next = function() {
                         $('.carousel').carousel('next');
                     }

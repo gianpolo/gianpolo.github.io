@@ -4,9 +4,6 @@
 (function(){
     angular.module('app')
         .controller('NavCtrl',function($scope,$location){
-            $scope.isActive = function(viewLocation){
 
-                return $location.path() === viewLocation;
-            }
         })
 })();
