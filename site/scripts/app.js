@@ -4,12 +4,13 @@
 (function () {
 
     var app = angular.module("app", ['ngRoute']);
-    app.config(function ($routeProvider) {
+    app.config(function ($locationProvider,$routeProvider) {
+        $locationProvider.html5Mode(true);
         $routeProvider
-            .when("/resume", {templateUrl: 'site/views/resume/resume.html'})
-            .when("/hire-me", {templateUrl: 'site/views/hire-me/hire-me.html'})
-            .when("/about", {templateUrl: 'site/views/about/about.html'})
-            .otherwise({redirectTo: "/home"});
+            .when("/resume", {templateUrl: '/site/views/resume/resume.html'})
+            .when("/hire-me", {templateUrl: '/site/views/hire-me/hire-me.html'})
+            .when("/about", {templateUrl: '/site/views/about/about.html'})
+            .otherwise({redirectTo: "/resume"});
     });
 
     app.run(['$rootScope', function ($rootScope) {
