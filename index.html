@@ -24,16 +24,14 @@
     <ng-include src="'site/views/navbar.html'"></ng-include>
     <div class="container">
 
-    <div class="row">
-        <ng-include src="'site/views/sidebar.html'"></ng-include>
+        <div class="row">
+            <ng-include src="'site/views/sidebar.html'"></ng-include>
 
-
-        <div class="col s12 m12 l8 section">
-         <ng-view></ng-view>
+            <div class="col s12 m12 l8 section">
+             <ng-view></ng-view>
+            </div>
         </div>
-
-    </div>
-        <div class="fixed-action-btn">
+        <div class="fixed-action-btn click-to-toggle">
             <a class="btn-floating btn-large color3 tooltiped" data-tooltip="Download" data-position="left">
                 <i class="fa fa-download" aria-hidden="true"></i>
             </a>
@@ -60,7 +58,6 @@
     <script src="./site/scripts/services/QuoteColors.service.js"></script>
     <script src="./site/scripts/directives/side-nav/sideNav.directive.js"></script>
     <script src="./site/scripts/directives/tooltip/tooltip.directive.js"></script>
-    <script src="./site/scripts/controllers/nav.controller.js"></script>
     <script src="./site/scripts/directives/my-map/myMap.directive.js"></script>
 
 </body>
