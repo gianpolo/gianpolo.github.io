@@ -36,5 +36,5 @@ module.exports = function(grunt){
     grunt.registerTask("sass",["sass"]);
 
 
-    grunt.registerTask("start",["connect:server","watch"]);
+    grunt.registerTask("serve",["connect:server","watch"]);
 };

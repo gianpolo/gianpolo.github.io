@@ -10,21 +10,20 @@
             <item-content>
                 <div class="contact-form" id="contact">
                     <div class="row">
-                        <form role="form" id="contactForm" data-toggle="validator" novalidate="true">
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <form role="form" name="contactForm" data-toggle="validator" action="https://formspree.io/gianpie@yahoo.it"  method="POST">
                             <div class="input-field col s12">
-                                <label for="name" class="h4">Name *</label>
-                                <input type="text" class="form-control validate" id="name" required="" data-error="NEW ERROR MESSAGE">
+                                <input id="name" name="name"  ng-model="name" type="text" class="validate"  minlength="3" required>
+                                <label for="name" data-error="Too short">Name</label>
                             </div>
                             <div class="input-field col s12">
-                                <label for="email" class="h4">Email *</label>
-                                <input type="email" class="form-control validate" id="email" required="">
+                                <input id="email" name="email" ng-model="email" type="email" class="validate" required="">
+                                <label for="email" data-error="wrong email">Email</label>
                             </div>
                             <div class="input-field col s12">
-                                <label for="message" class="h4">Message *</label>
-                                <textarea id="message" class="form-control materialize-textarea validate" required=""></textarea>
+                                <textarea id="message" ng-model="message" minlength="20" maxlength="1000" name="message" class="form-control materialize-textarea validate" required=""></textarea>
+                                <label for="message" data-error="Too short" class="h4">Message</label>
                             </div>
-                            <button type="submit" id="form-submit" class="btn btn-success disabled">Submit</button>
+                            <input type="submit" id="form-submit" ng-disabled="contactForm.$invalid" class="btn btn-success" value="Send" />
                             <div class="clearfix"></div>
                         </form>
                     </div>
