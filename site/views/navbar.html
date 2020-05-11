@@ -1,19 +1,29 @@
 <nav>
-    <div class="nav-wrapper">
-        <a href="#" data-activates="mobile" class="button-collapse" side-nav><i class="fa fa-bars"></i><h4 class="hide-on-large-only page-title">{{currentPage}}</h4></a>
+  <div class="nav-wrapper">
+    <a href="#" data-activates="mobile" class="button-collapse" side-nav
+      ><i class="fa fa-bars"></i>
+      <h4 class="hide-on-large-only page-title">{{currentPage}}</h4></a
+    >
 
-        <ul class="right hide-on-med-and-down">
-            <li  ng-class="{'active': currentPage === 'Resume'}"><a href="/home">Resume</a></li>
-            <li  ng-class="{'active':currentPage === 'About'}"><a href="/about">About me</a></li>
-            <li  ng-class="{'active': currentPage === 'Contact'}"><a href="/hire-me">Contact</a></li>
-            <li  ng-class="{'active': currentPage === 'Blog'}"><a href="/blog">Blog</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile">
-
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/hire-me">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </div>
+    <ul class="right hide-on-med-and-down">
+      <li ng-class="{'active': currentPage === 'Resume'}">
+        <a href="/home">Resume</a>
+      </li>
+      <li ng-class="{'active':currentPage === 'About'}">
+        <a href="/about">About me</a>
+      </li>
+      <li ng-class="{'active': currentPage === 'Contact'}">
+        <a href="/hire-me">Contact</a>
+      </li>
+      <li ng-class="{'active': currentPage === 'Blog'}">
+        <a href="/blog">Blog</a>
+      </li>
+    </ul>
+    <ul class="side-nav" id="mobile">
+      <li><a href="/resume?v1">Resume</a></li>
+      <li><a href="/about">About me</a></li>
+      <li><a href="/hire-me">Contact</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </div>
 </nav>
