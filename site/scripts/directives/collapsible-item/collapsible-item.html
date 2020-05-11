@@ -1,12 +1,17 @@
-<div class="custom-content-wrapper wow fadeIn {{animation}} animated" data-wow-delay="{{delay}}" ng-click="toggle()" style="cursor:pointer">
-    <div class="collapsible-wrapper">
-    <a class="more" href="#">
-        <i ng-if="!open" class="fa fa-plus-circle" aria-hidden="true"></i>
-        <i ng-if="open" class="fa fa-minus-circle" aria-hidden="true"></i>
+<div
+  class="custom-content-wrapper wow fadeIn {{animation}} animated"
+  data-wow-delay="{{delay}}"
+  ng-click="toggle()"
+  style="cursor:pointer"
+>
+  <div class="collapsible-wrapper">
+    <a class="more">
+      <i ng-if="!open" class="fa fa-plus-circle" aria-hidden="true"></i>
+      <i ng-if="open" class="fa fa-minus-circle" aria-hidden="true"></i>
     </a>
     <h3 ng-transclude="collapsibleItemTitle"></h3>
     <span ng-transclude="collapsibleItemSubtitle"></span>
     <p ng-transclude="collapsibleItemHeader"></p>
     <div ng-transclude="collapsibleItemContent" ng-show="open"></div>
-    </div>
+  </div>
 </div>
